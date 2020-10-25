@@ -1,2 +1,2 @@
 # resume
-Resume for Data and Digital Initiatives Librarian
+Resume for Data and Digital Scholarship Librarian at UBCO
