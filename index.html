@@ -1,1 +1,682 @@
-<p>Place holder.</p>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume: Data and Digital Scholarship</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Resume: Data & Digital Scholarship</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br /> <br /></p>
+<div align="center" margin-top="50px">
+<strong>Mathew Vis-Dunbar</strong>
+</div>
+<div align="center">
+2015 East 3rd Ave. Vancouver, BC<br /> 604 726 2417<br /> <a href="mailto:mathew.visdunbar@gmail.com" class="email">mathew.visdunbar@gmail.com</a>
+</div>
+<hr />
+<div id="education" class="section level2">
+<h2>Education</h2>
+<p><strong>MLIS &amp; MAS</strong> 2013 - 2016 University of British Columbia, Vancouver, BC</p>
+<ul>
+<li>Roy Stokes Medal in Archival Studies 2016</li>
+<li>James Fraser Memorial Prize 2014</li>
+</ul>
+<p><strong>Landscape Horticulture Certificate</strong> 2005 - 2006 Capilano University, North Vancouver, BC</p>
+<ul>
+<li>Dean’s list</li>
+</ul>
+<p><strong>Bachelor of Arts</strong> 2001 - 2005 Simon Fraser University, Burnaby, BC</p>
+<hr />
+</div>
+<div id="experience" class="section level2">
+<h2>Experience</h2>
+<p><strong>March 2016 - Present</strong></p>
+<p>Librarian, Southern Medical Program, UBC Okanagan</p>
+<p>This position has grown and evolved to include a number of responsibilities from reference to undergraduate medicine Case Based Learning tutoring, supervising student research projects, managing the UBCO makerspace, supporting faculty research, and coordinating the Fostering Open Science Initiative at UBCO.</p>
+<p><strong>Data &amp; Research Data Management</strong></p>
+<ul>
+<li>Member of the Library’s Research Data Management team supporting the Library’s efforts to help researchers in the context of RDM.</li>
+<li>Collaborate with colleagues across the institution and the country in environmental scans of researchers’ practices and needs and solutions to data deposit and discovery.</li>
+<li>Develop and deliver class instruction and workshops on principles of data management, discovery, and deposit.</li>
+<li>Work with partners in Advanced Research Computing (ARC) and Office of Research Services to align the processes of Data Management Plans and research ethics requirements.</li>
+</ul>
+<p><strong>Open Science and Digital Scholarship</strong></p>
+<ul>
+<li>Member of the Fostering Open Science Initiative, a two year $100 000 strategically funded initiative to promote and enable best practices and principles in Open Science.</li>
+<li>Collaborate with faculty across disciplines, ARC, IT and VP Research to help understand and implement strategies to enable researcher best practices in the context of Open from study design to dissemination of results and management of research inputs and outputs.</li>
+<li>Collaborate with faculty, lab managers, library colleagues, and VP Academic to integrate Open Science principles and practices into the undergraduate classroom.</li>
+<li>Maintain abreast of and consult on trends in data and digital scholarship including software and hardware needs and availability to support data analysis and visualisation and standards and storage options to ensure data accessibility.</li>
+<li>Member of the Library’s Centre for Scholarly Communication (CSC) working group, participating in initial environmental scans for the development of the Library’s delivery of digital scholarship services and currently working to build out these services.</li>
+<li>Led UBC’s partnering with OSF to become Canada’s first post secondary institution to offer researchers a UBC OSF Institutional platform on which to collaborate and share their research.</li>
+</ul>
+<p><strong>Reference, Liaison, and Teaching and Learning</strong></p>
+<ul>
+<li><p>Support teaching, learning and research across UBC’s distributed Undergraduate Medical Education Program (UGME) as well as in Human Kinetics and Biology at the Okanagan campus.</p></li>
+<li>W1, 2018, W2 2020, listed W2 2021 - Co-instruct HMKN 545C <em>Introduction to Narrative, Scoping, and Systematic Reviews in Health and Exercise Sciences</em>. Graduate seminar covering all aspects of the review process, including review types, protocol development and registration, risk of bias and quality assessment of primary and secondary research, statistical analyses used in systematic reviews and meta-analyses, advanced searching, and coding methods.</li>
+<li>Integrated across the HMKN undergraduate curriculum, working with instructors to scaffold library skills and information literacy across the four year program.</li>
+<li>Work with colleagues on the introduction of Open Science principles and practices complimenting existing class syllabi and assignments in undergraduate Biology.</li>
+<li>Support the UGME’s Case Based Learning (CBL) as a tutor for the first two years of the program.</li>
+<li>Annually participate as a facilitator in UBC Health’s Integrated Curriculum delivery of their medical ethics modules.</li>
+<li>Provide workshops and class instruction on the many aspects of scholarly communication including the publishing landscape, RDM, discoverability and retrievability of outputs including DOIs and ORCIDs, and platforms to support the research life cycle including OSF and Dataverse.</li>
+<li>Participated in the development, coordination, and delivery of the RDM Fall Series 2020, a 3 week RDM series covering all aspects of data in the research life cycle.</li>
+<li><p>Currently co-developing an introductory series on statistical software (R and SPSS) for the CSC.</p></li>
+</ul>
+<p><strong>Outreach and Communication</strong></p>
+<ul>
+<li>Co-led the production and launch of a podcast series featuring UBC Okanagan faculty and researchers critically discussing their work and practices within the academy, promoting open dialogue around the research paradigm.</li>
+<li>Conducted environmental scans and interviews to inform the offering of public library lending at UBCO through Okanagan Regional Library.</li>
+<li>Annually co-chair Science Literacy Week, exploring novel ways of connecting with library users and campus partners in the pursuit of enhanced science literacy.</li>
+</ul>
+<p><strong>Supervisory &amp; Coordination</strong></p>
+<ul>
+<li>Supervise student research projects through the UGME. Currently supervising one student examining facilitators and barriers to supports for survivors of sexual violence in Kelowna.</li>
+<li>Co-supervise one graduate student to support the Fostering Open Science at UBC Initiative.</li>
+<li>2017-2019 managed and coordinated <em>makerspace UBCO</em> working with a broad range of faculties and upwards of nine student reports to promote creative engagement and prototyping across disciplines.</li>
+<li>2016-2017 co-supervised one library staff position in relation to their duties to the Southern Medical Program.</li>
+</ul>
+<p><strong>Current Research</strong></p>
+<ul>
+<li>Participate in the development, implementation and authoring of several reviews in the health sciences in the areas of behaviour change, physical activity, and partnership research. A list of relevant publications, protocols, and conference presentations emanating from this research can be found below.</li>
+<li>With colleagues at ECRI and Cochrane, currently developing validated search strategies leveraging the National Library of Medicine’s Edirect Utilities and R for natural language processing to limit bias and improve transparency and computational reproducibility of our outputs.</li>
+</ul>
+<hr />
+</div>
+<div id="publications" class="section level2">
+<h2>Publications</h2>
+<div id="articles" class="section level3">
+<h3>Articles</h3>
+<p>SCI Guiding Principles Consensus Panel, Hoekstra, F., Mrklas, K. J., Khan, M., McKay, R. C., <strong>Vis-Dunbar, M.</strong>, Sibley, K. M., Nguyen, T., Graham, I. D., &amp; Gainforth, H. L. (2020). A review of reviews on principles, strategies, outcomes and impacts of research partnerships approaches: A first step in synthesising the research partnership literature. <em>Health Research Policy and Systems</em>, <em>18</em>(1), 51. <a href="https://doi.org/10.1186/s12961-020-0544-9" class="uri">https://doi.org/10.1186/s12961-020-0544-9</a></p>
+<p>Sharp, P., Spence, J. C., Bottorff, J. L., Oliffe, J. L., Hunt, K., <strong>Vis-Dunbar, M.</strong>, &amp; Caperchione, C. M. (2020). One small step for man, one giant leap for men’s health: A meta-analysis of behaviour change interventions to increase men’s physical activity. <em>British Journal of Sports Medicine</em>, bjsports–2019–100912. <a href="https://doi.org/10.1136/bjsports-2019-100912" class="uri">https://doi.org/10.1136/bjsports-2019-100912</a></p>
+<p>Pesut, B., Thorne, S., Greig, M., Fulton, A., Janke, R., &amp; <strong>Vis-Dunbar, M.</strong> (2019). Ethical, Policy, and Practice Implications of Nurses’ Experiences With Assisted Death. <em>Advances in Nursing Science</em>, <em>42</em>(3), 216–230. <a href="https://doi.org/10.1097/ans.0000000000000276" class="uri">https://doi.org/10.1097/ans.0000000000000276</a></p>
+</div>
+<div id="protocols" class="section level3">
+<h3>Protocols</h3>
+<p>Hoekstra, F., Mrklas, K. J., Sibley, K. M., Nguyen, T., <strong>Vis-Dunbar, M.</strong>, Neilson, C. J., Crockett, L. K., Gainforth, H. L., &amp; Graham, I. D. (2018). A review protocol on research partnerships: A Coordinated Multicenter Team approach. <em>Systematic Reviews</em>, <em>7</em>(1). <a href="https://doi.org/10.1186/s13643-018-0879-2" class="uri">https://doi.org/10.1186/s13643-018-0879-2</a></p>
+<p>MacPherson, M., Cranston, K., Locke, S., <strong>Vis-Dunbar, M.</strong>, Jung, M. (in press). Diet and Exercise Interventions for Individuals at Risk for Type 2 Diabetes: A Scoping Review Protocol. <em>BMJ Open.</em></p>
+<p>Peacock, D., Yoneda, J., Siever, J., <strong>Vis-Dunbar, M.</strong>, &amp; Boelman, C. (2020, May 28). Prevalence of movement disorders secondary to novel anticonvulsant medications in pediatric populations: A systematic review protocol. <a href="https://doi.org/10.17605/OSF.IO/QRZDW" class="uri">https://doi.org/10.17605/OSF.IO/QRZDW</a></p>
+<p>Santos, A., Lonsdale, C., Lubans, D., Vasconcellos, D., Kapsal, N., <strong>Vis-Dunbar, M.</strong>, &amp; Jung, M. E. (2020). Rates of compliance and adherence to high-intensity interval training in insufficiently active adults: A systematic review and meta-analysis protocol. <em>Systematic Reviews</em>, <em>9</em>(1), 56. <a href="https://doi.org/10.1186/s13643-020-01301-0" class="uri">https://doi.org/10.1186/s13643-020-01301-0</a></p>
+<p><strong>Vis-Dunbar, M.</strong>, Ellis, U., &amp; Kitchin, V. (2019, November 7). Patient and public partner authorship on systematic and scoping reviews: an overview of reviews. <a href="https://osf.io/m46qw" class="uri">https://osf.io/m46qw</a></p>
+<p>Voss, C., &amp; <strong>Vis-Dunbar, M.</strong> (2020, February 17). Interventions to improve physical activity in individuals with congenital heart disease: a scoping review. <a href="https://doi.org/10.17605/OSF.IO/4JB68" class="uri">https://doi.org/10.17605/OSF.IO/4JB68</a></p>
+</div>
+<div id="blog-posts" class="section level3">
+<h3>Blog posts</h3>
+<p>Hanna, S., Pither, J., &amp; Vis-Dunbar, M. (2020, August 18). <em>Open Science Right from the Start: How the UBC Okanagan Library Introduces Students to Good Scientific Practice | ZBW MediaTalk</em>. <a href="https://www.zbw-mediatalk.eu/2020/08/open-science-right-from-the-start-how-the-ubc-okanagan-library-introduces-students-to-good-scientific-practice/" class="uri">https://www.zbw-mediatalk.eu/2020/08/open-science-right-from-the-start-how-the-ubc-okanagan-library-introduces-students-to-good-scientific-practice/</a></p>
+<p>Hanna, S., Pither, J., &amp; Vis-Dunbar, M. (2020, January 28). <em>UBC leads the way as first Canadian institutional OSF member</em>. <a href="https://www.cos.io/blog/ubc-leads-way-first-canadian-institutional-osf-member" class="uri">https://www.cos.io/blog/ubc-leads-way-first-canadian-institutional-osf-member</a></p>
+</div>
+<div id="podcasts" class="section level3">
+<h3>Podcasts</h3>
+<p>McDonald, F., Lacey, S., <strong>Vis–Dunbar, M.</strong>, Hilstob, K., &amp; Langille, D. (2018, August 20). Water in our everyday lives : the sensory storytelling project. <a href="doi:http://dx.doi.org/10.14288/1.0388741" class="uri">doi:http://dx.doi.org/10.14288/1.0388741</a></p>
+<p>Conway, A., &amp; <strong>Vis-Dunbar, M.</strong> (2018, February 16). Faith and relationships : Novel reflections. <a href="doi:http://dx.doi.org/10.14288/1.0380466" class="uri">doi:http://dx.doi.org/10.14288/1.0380466</a></p>
+<p>Tippett, B., &amp; <strong>Vis-Dunbar, M.</strong> (2017, July 26). Non-canonical explorations : interweaving fiction, science and literacy. <a href="doi:http://dx.doi.org/10.14288/1.0355659" class="uri">doi:http://dx.doi.org/10.14288/1.0355659</a></p>
+</div>
+<div id="infographics" class="section level3">
+<h3>Infographics</h3>
+<p>Sharp, P., Spence, J. C., Bottorff, J. L., Oliffe, J. L., Hunt, K., <strong>Vis-Dunbar, M.</strong>, Virgile, A., &amp; Caperchione, C. M. (2020). Infographic. One small step for man, one giant leap for men’s health: A meta-analysis of behaviour change interventions to increase men’s physical activity. <em>British Journal of Sports Medicine</em>. <a href="https://doi.org/10.1136/bjsports-2020-102976" class="uri">https://doi.org/10.1136/bjsports-2020-102976</a></p>
+<p>Hanna, S., Langille, D., <strong>Vis-Dunbar, M.</strong> (2020). <em>Ellen Simmons: KiʔlawnaɁin the Okanagan</em>. Available at <a href="https://library.ok.ubc.ca/about/news-events/science-literacy-week/ellen-simmons/" class="uri">https://library.ok.ubc.ca/about/news-events/science-literacy-week/ellen-simmons/</a></p>
+<p>Hanna, S., Langille, D., <strong>Vis-Dunbar, M.</strong> (2020). <em>Kristen Mancuso: Flighted Migrations</em>. Available at <a href="https://library.ok.ubc.ca/about/news-events/science-literacy-week/kristen-mancuso/" class="uri">https://library.ok.ubc.ca/about/news-events/science-literacy-week/kristen-mancuso/</a></p>
+<p>Hanna, S., Langille, D., <strong>Vis-Dunbar, M.</strong> (2020). <em>Mateen Hessami: Moose Management in the Lake Revelstoke Valley</em>. Available at <a href="https://library.ok.ubc.ca/about/news-events/science-literacy-week/mateen-hessami/" class="uri">https://library.ok.ubc.ca/about/news-events/science-literacy-week/mateen-hessami/</a></p>
+<p>Hanna, S., Langille, D., <strong>Vis-Dunbar, M.</strong> (2020). <em>Corrina Thomsen: Plant-Fungal Relationships</em>. Available at <a href="https://library.ok.ubc.ca/about/news-events/science-literacy-week/corrina-thomsen/" class="uri">https://library.ok.ubc.ca/about/news-events/science-literacy-week/corrina-thomsen/</a></p>
+</div>
+<div id="surveys-and-reports" class="section level3">
+<h3>Surveys and Reports</h3>
+<p>Barsky, E., Farrar, P., Meredith-Lobay, M., Mitchell, M., Naslund, J.-A., Sylka, C., &amp; <strong>Vis-Dunbar, M.</strong> (2016). UBC Research Data Management Survey: Humanities and Social Sciences. <a href="http://dx.doi.org/10.14288/1.0342343" class="uri">http://dx.doi.org/10.14288/1.0342343</a></p>
+<p>Barsky, E., Brown, H., Ellis, U., Ishida, M., Janke, R., Menzies, E., … <strong>Vis-Dunbar, M.</strong> (2017). UBC Research Data Management Survey: Health Sciences. <a href="http://dx.doi.org/10.14288/1.0347528" class="uri">http://dx.doi.org/10.14288/1.0347528</a></p>
+<p>Barsky, E., Brown, H., Ellis, U., Ishida, M., Janke, R., Menzies, E., … <strong>Vis-Dunbar, M.</strong> (2017, May 31). UBC Research Data Management Survey : Health Sciences : Report. <a href="http://dx.doi.org/10.14288/1.0348070" class="uri">http://dx.doi.org/10.14288/1.0348070</a></p>
+<hr />
+</div>
+</div>
+<div id="instruction" class="section level2">
+<h2>Instruction</h2>
+<div id="teaching" class="section level3">
+<h3>Teaching</h3>
+<p>In addition to providing guest lectures on a range of topics related to information literacy, academic profiles, discoverability, and data management I offer the following regular classes, workshops, and online learning opportunities:</p>
+<ul>
+<li>HMKN 545C. Graduate seminar co-taught with Dr. Mary Jung. <em>Introduction to Narrative, Scoping, and Systematic Reviews in Health and Exercise Sciences</em>. Offered W1 2018, W2 2019, listed for W2 2020.</li>
+<li>MEDD 412 and MEDD 421. <em>Case Based Learning</em>. Tutor 6 week long CBL sessions for the Southern Medical Program. Participated W2 2019, confirmed for W1 2020.</li>
+<li>UBCO Vertebrate Discussion Group. Invited annually since 2019 to deliver sessions on Open Science and Research Data in Biology and Ecology.</li>
+<li>POSE: Program for Open Scholarship and Education. Online professional development learning opportunity for Open Access, Open Research, and Open Education. Due to be released January 2021.</li>
+</ul>
+</div>
+<div id="workshops" class="section level3">
+<h3>Workshops</h3>
+<p>In addition to regular workshops on OSF and Open Science to graduate seminars and UBC faculty and staff, the following workshops were offered as part of larger events.</p>
+<p>Buhley, J. &amp; <strong>Vis-Dunbar, M.</strong> (2019, October 19). <em>Making you data open</em>. Open Scholarship in Practice Event. <a href="https://dx.doi.org/10.14288/1.0387134" class="uri">https://dx.doi.org/10.14288/1.0387134</a></p>
+<p><strong>Vis-Dunbar, M.</strong> (2020, July 29). <em>Open Science: Transparency and reproducibility in the research life cycle</em>. Theraputics Initiative Methods Speaker Series. <a href="https://www.ti.ubc.ca/2020/06/24/jul-29-ti-methods-speaker-series-open-science-transparency-and-reproducibility-in-the-research-life-cycle/" class="uri">https://www.ti.ubc.ca/2020/06/24/jul-29-ti-methods-speaker-series-open-science-transparency-and-reproducibility-in-the-research-life-cycle/</a></p>
+<p><strong>Vis-Dunbar, M.</strong> (2019, June 12). <em>Research Data Management for the Undergraduate Classroom &amp; Digital Humanities</em>. Retrieved from <a href="https://osf.io/jcn9e" class="uri">https://osf.io/jcn9e</a></p>
+<p>Parker, S., Patterson, S., <strong>Vis-Dunbar, M.</strong> (2020, October 5). <em>Introduction to Open Science Framework</em>. Research Data Management Fall Series 2020. <a href="https://doi.org/10.17605/OSF.IO/W5N9K" class="uri">https://doi.org/10.17605/OSF.IO/W5N9K</a></p>
+<p><strong>Vis-Dunbar, M.</strong> (2020, October 1). <em>Introduction to Open Science Framework</em>. Living Data Project: Productivity and Reproducibility in Ecology &amp; Evolution. <a href="https://osf.io/uwzx5/" class="uri">https://osf.io/uwzx5/</a></p>
+<hr />
+</div>
+</div>
+<div id="conferences" class="section level2">
+<h2>Conferences</h2>
+<div id="presentations-and-abstracts" class="section level3">
+<h3>Presentations and Abstracts</h3>
+<p>Hanna, S.M., Pither, J., &amp; <strong>Vis-Dunbar, M.</strong> (2020, March). <em>Scientific Culture Change from Above and Below at UBCO: Implementation of a Comprehensive Open Science Library Information Literacy Program for Undergraduates</em>. Presentation and poster at the Open Science Conference 2020, Berlin, Germany. Zenodo. <a href="http://doi.org/10.5281/zenodo.3776724" class="uri">http://doi.org/10.5281/zenodo.3776724</a></p>
+<p>Ellis, U., Kitchin, V., &amp; <strong>Vis-Dunbar, M.</strong> (2019, December). <em>Patient and Public Partner Authorship on Systematic and Scoping Reviews: An Overview of Reviews</em>. Poster at the 26th Cochrane Colloquium. <a href="https://abstracts.cochrane.org/sites/default/files/attachments/pdf/poster-7284.pdf" class="uri">https://abstracts.cochrane.org/sites/default/files/attachments/pdf/poster-7284.pdf</a></p>
+<p>Hoekstra, F., Mrklas K.J., Sibley K.M., Nguyen T., <strong>Vis -Dunbar M.</strong>, Neilson C.J., Crockett L.K., Gainforth H.L., Graham I.D. (2019, May). <em>A review protocol on research partnerships: A coordinated multicenter team approach</em>. Poster presented at the 2019 annual meeting of Knowledge Translation Canada, Winnipeg, MB.</p>
+<p>Hoekstra, F., Sibley, K.M., Khan M., Mrklas K.J., Nguyen T., <strong>Vis -Dunbar M.</strong>, McKay R., Neilson C.J., Crockett L.K., Graham I.D., Gainforth H.L. (2019, March). <em>A review of reviews on principles and strategies for research partnerships: a first step to optimize partnership guidance</em>. Poster presented at the 40th annual meeting of the Society of Behavioral Medicine, Washington, DC.</p>
+<p>Pither, J. &amp; <strong>Vis-Dunbar, M.</strong> (2019, October). <em>Reproducible Research through Open Science</em>. Keynote at the 2019 Open Scholarship in Practice Event, Vancouver, BC.</p>
+<p><strong>Vis-Dunbar, M.</strong> &amp; Weyand, S. (2019, May). <em>3D Printing and Design</em>. Experiential Learning Session at the 2019 UBC Okanagan Learning Conference, Kelowna, BC.</p>
+<p><strong>Vis-Dunbar, M.</strong> &amp; Pither, J. (2019, March) <em>Open science: Principles and Practices at the Undergraduate Level at UBC Okanagan</em>. Presentation at the 31st Annual Cyamus Meeting, Bamfield, BC.</p>
+<p><strong>Vis-Dunbar M.</strong>, Kitchin V., Raworth R., Menzies E., Fyfe T. (2018, June). <em>Collaborative Assessment: developing a library assessment framework for a distributed medical program in BC</em>. Poster presented at the 2018 Canadian Health Libraries Association Conference, St. John’s, NL</p>
+<p>Ishida, M., Lomness, A., Taylor, S., &amp; <strong>Vis-Dunbar, M.</strong> (2017). <em>Science Literacy Week : Building Partnerships through a Passion for Discovery</em>. Presented at the 43rd Annual International Association of Aquatic and Marine Science Libraries and Information Centers. <a href="http://dx.doi.org/10.14288/1.0369296" class="uri">http://dx.doi.org/10.14288/1.0369296</a></p>
+<p>Watkins, S., Baca, D., Lazear, A., <strong>Vis-Dunbar, M.</strong> (2017). <em>Aquatic and Marine Science Librarian Responsibilities: Current and Evolving Roles</em>. Panel at the 43rd Annual International Association of Aquatic and Marine Science Libraries and Information Centers.</p>
+</div>
+<div id="organised" class="section level3">
+<h3>Organised</h3>
+<p>I have participated or am currently participating on the organising committees of the following conferences and professional development events.</p>
+<ul>
+<li>Interdisciplinary Student Health Conference. UBC Okanagan. 2021.</li>
+<li>Interdisciplinary Student Health Conference. UBC Okanagan. 2020.</li>
+<li>Leader in Residence. UBC Okanagan. 2019</li>
+<li>Open Scholarship in Practice. UBC Vancouver. 2019</li>
+<li>Open Scholarship in Practice. UBC Vancouver. 2018.</li>
+<li>Leader in Residence. UBC Okanagan. 2018.</li>
+<li>Researcher in Residence. UBC Okanagan. 2017.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="service-professional-development" class="section level2">
+<h2>Service &amp; Professional Development</h2>
+<div id="committees-and-working-groups" class="section level3">
+<h3>Committees and Working Groups</h3>
+<ul>
+<li>Open Scholarship Committee, UBCO Library. 2020 Ongoing.</li>
+<li>Research Data Management Team, UBC Library. 2019 Ongoing.</li>
+<li>Desk Tracker Assessment Working Group, Okanagan. 2019.</li>
+<li>Desk Tracker Assessment Working Group, UBC Library. 2019.</li>
+<li>Mediated Course Reserves Working Group, Okanagan. 2019.</li>
+<li>Open Scholarship Subcommittee, UBC Library. 2018 Ongoing.</li>
+<li>Centre For Scholarly Communication Working Group. 2018 Ongoing.</li>
+<li>Science Literacy Week Planning Committee. Co-chair. 2017 Ongoing.</li>
+<li>Undergraduate Medical Education Library Subcommittee. Co-chair. 2017 Ongoing.</li>
+</ul>
+</div>
+<div id="websites" class="section level3">
+<h3>Websites</h3>
+<ul>
+<li><a href="https://openscience.ubc.ca" class="uri">https://openscience.ubc.ca</a> Website for the Fostering Open Science @ UBC Initiative.</li>
+<li><a href="https://osf.openscience.ubc.ca" class="uri">https://osf.openscience.ubc.ca</a> OSF Institutions landing page for UBC.</li>
+<li><a href="https://people.ok.ubc.ca/vdunbar" class="uri">https://people.ok.ubc.ca/vdunbar</a> Personal website for student learning resources.</li>
+<li><a href="https://vdunbar.github.io/resume/" class="uri">https://vdunbar.github.io/resume/</a> Electronic version of this resume.</li>
+</ul>
+</div>
+<div id="professional-development-courses" class="section level3">
+<h3>Professional Development Courses</h3>
+<ul>
+<li>National Library of Medicine : Bioinformatics and Biology Essentials For Librarians. August - December, 2020.</li>
+<li>WestGrid: Research Computing Summer School. June 24-27 2019.</li>
+<li>National Library of Medicine : Edirect for PubMed. March 5-19, 2018.</li>
+</ul>
+</div>
+<div id="professional-and-community-affiliations" class="section level3">
+<h3>Professional and Community Affiliations</h3>
+<ul>
+<li>International Association of Marine Science Libraries and Information Centers. <em>Member</em>.</li>
+<li>Canadian Health Libraries Association. <em>Member</em>.</li>
+<li>Center for Open Science. <em>Ambassador</em>.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p><strong>Barbara Sobbel</strong></p>
+<p>Librarian, Undergraduate Services, UBC Okanagan Library<br />
+<a href="mailto:barbara.sobbel@ubc.ca" class="email">barbara.sobbel@ubc.ca</a><br />
+250 807 8063</p>
+<p><br /> <strong>Sally Taylor</strong></p>
+<p>Interim Head, Woodward Library and Biomedical Branch, UBC Library<br />
+<a href="mailto:sally.taylor@ubc.ca" class="email">sally.taylor@ubc.ca</a><br />
+604 822 6638</p>
+<p><br /> <strong>Vanessa Kitchin</strong></p>
+<p>Librarian, Woodward Library, UBC Library<br />
+<a href="mailto:vanessa.kitchin@ubc.ca" class="email">vanessa.kitchin@ubc.ca</a><br />
+604 822 3393</p>
+<p><br /> <strong>Jason Pither</strong></p>
+<p>Associate Professor, Biology, UBC Okanagan<br />
+<a href="mailto:jason.pither@ubc.ca" class="email">jason.pither@ubc.ca</a><br />
+250 807 9629</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
